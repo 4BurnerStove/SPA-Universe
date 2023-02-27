@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --button-txt-color: #c4c4cc;
+  --button-txt-color-hover: #8c8c92;
+  --button-txt-alternative: hsla(194, 97%, 31%, 1);
+
+
+  --txt-color: #ffff;
+  --click-button: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 55vh;
+  width: 95vw;
+  background-size: cover;
+  display: grid;
+}
+
+.click {
+  color: var(--click-button);
+  font-weight: 700;
+}
+
+#buttonsNav {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 4rem;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: var(--button-txt-color);
+}
+
+a:hover {
+  color: var(--button-txt-color-hover);
+}
+
+.flipTest {
+  transform: rotateY(0deg);
+  transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+
+
+.flipTest:hover {
+  transform: rotateY(180deg);
+  transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.HomePage a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-block: 1.2rem;
+  padding-inline: 3.2rem;
+  border-radius: .6rem;
+  border: 2px var(--txt-color) solid;
+  color: var(--txt-color);
+  transition: color, background 400ms;
+}
+
+.HomePage a:hover {
+  color: var(--button-txt-alternative);
+  background: var(--txt-color);
+  transition: color, background 400ms;
+ 
+}
+
+.HomePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.HomePage h1 {
+  font-size: 4.8rem;
+}
+
+.UniverseExp {
+  padding-left: 10.2rem;
+}
+
+.UniverseExp h2 {
+  font-size: 4.8rem;
+}
+.UniverseExp p {
+  margin-top: 1.6rem;
+  font-size: 1.8rem;
+  max-width: 60.8rem;
+  line-height: 160%;
+}
+
+.UniverseExp h2, .UniverseExp 
+p, .HomePage {
+  color: var(--txt-color);
+}
